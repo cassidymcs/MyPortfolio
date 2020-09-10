@@ -1,7 +1,7 @@
 import React from 'react';
-import cass from './cass.png';
-import GitHub_Logo from './GitHub_Logo.png';
-import link_logo from './link_logo.png';
+import cass from './assets/cass.png';
+import GitHub_Logo from './assets/GitHub_Logo.png';
+import link_logo from './assets/link_logo.png';
 import './App.css';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
       <img src={cass} className="grad-photo" alt="cassidy" />
         <p>
-          Cassidy McSkimming
+          Cassidy McSkimming Software Engineer
         </p>
         <a
           className="App-link"
@@ -28,7 +28,7 @@ function App() {
         >
           <img src={link_logo} alt="My Linkedin" className="linked"/>
         </a>
-      </header>
+        </header>
     </div>
   );
 }

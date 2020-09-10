@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-color: #b9e4e4;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -8,12 +12,13 @@
 }
 
 .grad-photo {
-  height: 380px;
   width: 240px;
   border: 3px solid#0c0c08; 
   position: fixed;
   left: 50px;
   top: 70px;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,8 +28,7 @@
 }
 
 .App-header {
-  background-color: #b9e4e4;
-  min-height: 100vh;
+  background-color:  #b9e4e4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,11 +43,16 @@
 .git {
   height: 35px;
   width: 100px;
+  animation-name: social-links;
+  animation-duration: 1.8s;
 }
 
 .linked {
   height: 35px;
   width: 45px;
+  animation-name: social-links;
+  animation-duration: 1.8s;
+  animation-delay: .9s;
 }
 
 @keyframes App-logo-spin {
@@ -52,5 +61,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes social-links {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.5)
+  }
+  100% {
+    transform: scale(1)
   }
 }
