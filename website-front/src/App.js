@@ -1,4 +1,6 @@
 import React from 'react';
+import Navbar from "./Components/Navbar";
+import Section from "./Components/Section";
 import cass from './assets/cass.png';
 import GitHub_Logo from './assets/GitHub_Logo.png';
 import link_logo from './assets/link_logo.png';
@@ -7,10 +9,35 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+              <Navbar />
+        <Section
+          title="Section 1"
+          dark={true}
+          id="section1"
+        />
+        <Section
+          title="Section 2"
+          dark={false}
+          id="section2"
+        />
+        <Section
+          title="Section 3"
+          dark={true}
+          id="section3"
+        />
+        <Section
+          title="Section 4"
+          dark={false}
+          id="section4"
+        />
+        <Section
+          title="Section 5"
+          dark={true}
+          id="section5"
+        />
       <img src={cass} className="grad-photo" alt="cassidy" />
         <p>
-          Cassidy McSkimming Software Engineer
+          Cassidy McSkimming
         </p>
         <a
           className="App-link"
@@ -28,7 +55,6 @@ function App() {
         >
           <img src={link_logo} alt="My Linkedin" className="linked"/>
         </a>
-        </header>
     </div>
   );
 }
